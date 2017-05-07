@@ -1,11 +1,17 @@
 {
-  "name": "fuser-relay-all-in-one",
+  "name": "universal-react-relay",
   "version": "0.2.0",
-  "description": "fuseR - Relay-PostGraphQL Isomorphic Client/Server",
+  "description": "Universal/Isometric React-Relay-GraphQL-/(PostGraphQL)/-PostgreSQL Blog",
   "main": "server",
   "engines": {
     "node": ">=7.8.0",
     "npm": "^4.2.0"
+  },
+  "author": "Bartek Kus <bartekus@gmail.com> (https://bartekus.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartekus/universal-react-relay.git"
   },
   "scripts": {
     "schema:1:build": "node server/scripts/buildSchema",

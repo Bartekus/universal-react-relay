@@ -8,12 +8,14 @@ import { RegisterPersonMutation, AuthenticatePersonMutation } from '../mutations
 const TOKEN_KEY = 'token';
 const { commitUpdate } = Relay.Store;
 
+let localStorage;
+
 if (typeof window === 'undefined' ) {
   require('fs');
   const LocalStorage = require('node-localstorage').LocalStorage;
-  global.localStorage = new LocalStorage('./scratch');
+  localStorage = new LocalStorage('./scratch'); // eslint-disable-line no-global-assign
 } else {
-  global.localStorage = window.localStorage;
+  localStorage = window.localStorage; // eslint-disable-line no-global-assign
 }
 
 const authDecorator = WrappedComponent => (

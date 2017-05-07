@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, css } from 'aphrodite';
+// import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router';
 
-const styles = StyleSheet.create({
-  container: {
-    marginBottom: '2.25em',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     marginBottom: '2.25em',
+//   },
+// });
 
 function PostItem({
   id,
@@ -18,7 +18,7 @@ function PostItem({
   updatedAt,
 }) {
   return (
-    <article className={css(styles.container)}>
+    <article>
       <header>
         <h2><Link to={`/posts/${id}`}>{headline}</Link></h2>
         <p>by {author.fullName}</p>
@@ -41,3 +41,18 @@ function Timestamp({ label, date }) {
 }
 
 export default PostItem;
+
+/*
+<article className={css(styles.container)}>
+  <header>
+    <h2><Link to={`/posts/${id}`}>{headline}</Link></h2>
+    <p>by {author.fullName}</p>
+  </header>
+  <div><p>{summary}</p></div>
+  <aside>
+    <Timestamp label="Created on " date={createdAt} />
+    <Timestamp label="Updated on " date={updatedAt} />
+    <p>Filed under <span>{topic || 'n/a'}</span></p>
+  </aside>
+</article>
+ */

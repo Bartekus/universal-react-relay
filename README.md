@@ -1,6 +1,6 @@
-React-Relay-GraphQL Starter Kit
+Universal React-Relay-GraphQL - (WIP)
 ======
-This starter kit is a basic project setup that can be used to create web applications leveraging key core technologies.
+A basic universal/isomorphic blog type project setup that can be used to create web applications leveraging key core technologies.
 
 Core technologies
 ------

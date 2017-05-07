@@ -1,7 +1,7 @@
 /* @flow */
 
 import express from 'express';
-import graphQLHTTP from 'express-graphql';
+// import graphQLHTTP from 'express-graphql';
 import path from 'path';
 import IsomorphicRouter from 'isomorphic-relay-router';
 import ReactDOMServer from 'react-dom/server';

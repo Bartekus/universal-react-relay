@@ -1,7 +1,7 @@
 import React from 'react';
 import Relay from 'react-relay';
 import { Link, withRouter } from 'react-router';
-import { StyleSheet, css } from 'aphrodite';
+// import { StyleSheet, css } from 'aphrodite';
 import ContentEditable from '../components/ContentEditable';
 import { UpdatePostMutation, DeletePostMutation } from '../mutations';
 

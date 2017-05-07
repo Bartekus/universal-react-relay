@@ -1,6 +1,6 @@
 import React from 'react';
 import Relay from 'react-relay';
-import { StyleSheet, css } from 'aphrodite';
+// import { StyleSheet, css } from 'aphrodite';
 import PostItem from '../components/PostItem';
 import PostForm from '../components/PostForm';
 import ScrollBottomNotifier from '../utils/ScrollBottomNotifier';
